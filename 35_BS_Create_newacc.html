@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Softwares/bootstrap.min.css">
+    <link rel="stylesheet" href="Softwares/animate.min.css">
+    <link href="Softwares/fonts/font-awesome.min.css">
+    <script src="Softwares/jquery.min.js"></script>
+    <script src="Softwares/bootstrap.min.js"></script>
+    <script src="Softwares/scrollreveal.min.js"></script>
+    <title>Creating Account</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+    <style>
+        body{
+            background-image: linear-gradient(gray,grey);
+        }
+        h4{
+            animation:fadeInRight;
+            animation-duration:2s;
+        }
+        .form-control{
+            background-color: rgb(94, 129, 65);
+            box-shadow: 1px 1px 2px chartreuse;
+        }
+        .btn{
+            box-shadow: 1px 2px 3px black;
+        }
+        h3{
+            font-family: monospace;
+            animation:rubberBand;
+            animation-duration: 2s;
+        }
+        .username,.password{
+            animation: fadeInLeft;
+            animation-duration: 2s;
+        }
+        .email,.select{
+            animation: fadeInRight;
+            animation-duration: 2s;
+        }
+        .cb{
+            animation:bounceInUp;
+            animation-duration: 2s;
+        }
+        .well{
+            animation:rubberBand;
+            animation-duration: 2s;
+            background-color: rgb(123, 173, 72);
+            box-shadow: 2px 2px black;
+        }
+        h2{
+            animation: fadeInDown;
+            animation-duration: 2s;
+        }
+        .submit{
+            animation:bounceInDown;
+            animation-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center ">Create Your Own Account <hr></h3>
+    <form action="login.php" method="POST" class="row input-lg">
+        <div class="form-group col-sm-7 username">
+            <label for="#usr" class="col-sm-12">Username:<input type="text" name="username" placeholder="Username" id="usr" class="form-control"></label>
+        </div>
+        <div class="form-group col-sm-7 email">
+            <label for="#email" class="col-sm-12">Email:<input type="email" name="email" placeholder="Email Address" id="email" class="form-control"></label>
+        </div>
+        <div class="form-group col-sm-7 password">
+            <label for="#psw" class="col-sm-12">Password:<input type="password" name="password" placeholder="Password" id="psw" class="form-control"></label>
+        </div>
+        <div class="form-group col-sm-7 select">
+        <div class="col-sm-12">
+        <h4 >Choose your country</h4>
+            <select name="country" id="" class="form-control">
+                <option value="" class="col-sm-12">Myanamr</option>
+                <option value="" class="col-sm-12">Singapore</option>
+                <option value="" class="col-sm-12">Thailand</option>
+                <option value="" class="col-sm-12">China</option>
+                <option value="" class="col-sm-12">Japan</option>
+            </select>
+        </div>
+        </div>
+        <div class="form-group col-sm-7 cb">
+            <label for="#cb" class="col-sm-12"><input type="checkbox" name="checkbox" id="cb" checked>&nbsp;Keep me login</label>
+        </div>
+        <div class=" well well-xs form-group col-sm-7">
+        <div class="">
+            <h2 class="text-danger input-lg ">Choose your gender</h2>
+            <label for="#radio" class="col-sm-12"><input type="radio" name="radio" id="radio">&nbsp;Male</label>
+            <label for="" class="col-sm-12"><input type="radio" name="radio">&nbsp;Female</label>
+            <label for="" class="col-sm-12"><input type="radio" name="radio">&nbsp;Custom</label>
+        </div>
+        </div>
+        <div class="form-group col-sm-7 submit">
+            <button type="submit" class="btn btn-primary col-sm-2" >Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

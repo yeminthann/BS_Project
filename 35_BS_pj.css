@@ -1,0 +1,73 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    position: relative;
+}
+.navbar{
+    background-color: rgba(39, 38, 38, 0.7);
+    margin-bottom:0;
+    padding-left: 30px;
+    width: 100%;
+}
+.navbar-brand{
+    font-family: Bahnschrift;
+}
+.dropdown-menu{
+    background-color: rgb(184, 158, 158);
+    box-shadow: 1px 1px rgb(78, 77, 77);
+    border-radius: 10px;
+}
+.screen1{
+    padding:10px;
+    margin-top:40px;
+}
+.screenone{
+    padding: 30px;
+    margin-top:85px;
+}
+.title{
+    text-align: center;
+    font-family: Brush Script MT;
+    font-size: 50px;
+}
+.slogan{
+    font-family:Harlow Solid;
+    font-size: 40px;
+}
+
+.tour{
+    /* margin-left: 20px; */
+    padding: 30px;
+}
+.view{
+    margin-left: 40px;
+    padding: 30px;
+}
+.button{
+    padding: 20px;
+}
+.btn{
+    margin-left: 30px;
+}
+.besttour .row{
+    padding: 30px;
+}
+.footer{
+    padding: 10px;
+}
+.popular{
+    margin-top: 70px;
+    animation:fadeInRight;
+    animation-duration: 1s;
+}
+.contact{
+    padding:0 100px;
+}
+.footer{
+    animation:bounce;
+    animation-duration: 3s;
+}
