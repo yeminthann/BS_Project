@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #000;
+    color: #fff;
+    font-family: monospace;
+}
+/************************* NAVBAR *********************/
+#header-nav {
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+}
+#logo-img {
+    width: 100px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 20px;
+    text-shadow: 2px 2px 2px #000;
+    clear: both;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+.navbar-brand p {
+    color: rgb(16, 19, 16);
+    padding-left: 20px;
+    text-shadow: 1px 1px 1px #080807;
+}
+#nav-list a {
+    color: rgb(46, 119, 79);
+    text-align: center;
+    margin-top: 10px;
+}
+#nav-list a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+#phone a {
+    text-align: right;
+    padding-bottom: 0;
+}
+#phone div {
+    color: brown;
+    text-align: right;
+    padding-right: 15px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid rgb(59, 52, 52);
+    clear: both;
+}
+.call-center {
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 15px;
+    font-size: 2vw;
+}
+/************************ NAVBAR END *********************/
+
+/************************ HOME PAGE **********************/
+.container .jumbotron {
+    background-color: rgb(7, 4, 4);
+}
+#menu-tile, #specials-tile, #map-tile {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid rgb(31, 30, 29);
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 2px 2px 1px rgb(68, 16, 16);
+}
+#menu-tile {
+    background: url('../img/food1.jpg') no-repeat;
+    background-position: center;
+}
+#specials-tile {
+    background: url('../img/food3.jpg') no-repeat;
+    background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    background-color: rgb(5, 1, 10);
+    color: #727209;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    font-size: 1.6em;
+    opacity: 0.9;
+}
+.panel-footer {
+    background-color: rgb(41, 20, 20);
+    color: antiquewhite;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border-top: 0;
+}
+.panel-footer section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.panel-footer div.row {
+    margin-bottom: 30px;
+}
+#hours, #address {
+    line-height: 2;
+}
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+#address p {
+    color: aqua;
+    font-size: .9em;
+    line-height: 1.8;
+}
+#testimonials {
+    font-style: italic;
+}
+#testimonials p:nth-child(2) {
+    margin-top: 25px;
+}
+.panel-footer section:nth-child(3) {
+    margin-bottom: 0;
+}
+/********************** HOME PAGE END *******************/
+
+/*********************** menu start   *******************/
+.category-tile {
+    position: relative;
+    border: 2px solid #727209;
+    overflow: hidden;
+    width: 200px;
+    height: 150px;
+    margin: 0 auto 15px;
+
+}
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: aqua;
+    opacity: .95;
+}
+.category-tile:hover { 
+    box-shadow: 0 1px 5px 1px #807878;
+}
+#menu-categories-title + div { /* because they r siblings */
+    margin-bottom: 50px;
+}
+/*********************** menu end     *******************/
+
+/******************** menu-item start *******************/
+.menu-item-tile {
+    margin-bottom: 15px;
+}
+.menu-item-tile hr {
+    width: 80%;
+    margin: 20px auto;
+}
+.menu-item-tile .menu-item-price {
+    font-size: 1.1em;
+    text-align: right;
+}
+.menu-item-tile .menu-item-price span {
+    font-size: .7em;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.menu-item-photo {
+    position: relative;
+    border: 2px solid #79580c;
+    border-radius: 65px;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    max-width: 250px;
+}
+.menu-item-photo div {
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    right: 0;
+    width: 95px;
+    background-color: rgb(56, 14, 14);
+    text-align: center;
+}
+.menu-item-description {
+    padding-right: 30px;
+}
+h3.menu-item-title {
+    margin: 0 0 10px;
+}
+.menu-item-details {
+    font-size: .9em;
+    font-style: italic;
+}
+/******************** menu-item end *********************/
+
+/******for extral small devices********/
+@media (max-width: 479px) {
+    #menu-tile, #specials-tile {
+        width: 300px;
+        margin: 0 auto 15px;
+    }
+    .col-xxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+    .menu-item-photo {
+        margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+    }
+    .menu-item-description {
+        text-align: center;
+    }
+}
+/* for small devices */
+@media (min-width: 480px) and (max-width: 767px) {
+    .navbar-brand h2 {
+        font-size: 5vw; /* 1vw = 1 % of viewport width */
+    }
+    .jumbotron img {
+        width: 100%;
+        box-shadow: 2px 3px 3px rgb(90, 21, 21);
+        border-radius: 3px;
+    }
+    #menu-tile, #specials-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+    .menu-item-photo {
+        margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+    }
+    .menu-item-description {
+        text-align: center;
+    }
+}
+/* for medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    .jumbotron img {
+        width: 100%;
+        height: 30em;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 5px;
+    }
+}
+/* for large devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .jumbotron img {
+        width: 100%;
+        height: 35em;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 10px;
+    }
+}
+/* for extra large devices */
+@media (min-width: 1200px) {
+    .jumbotron img {
+        width: 100%;
+        height: 40em;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 10px;
+    }
+}
+
+
