@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/font-awesome.min.css">
+</head>
+<body>
+    <!-------------------------- header sematic tag --------------->
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <!-- to stretch the whole window -->
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a href="home_page.html" class="pull-left visible-md visible-lg">
+                        <div><img src="./img/logo.png" id="logo-img" alt="logo-image"></div>
+                    </a>
+                    <div class="navbar-brand">
+                        <a href="#"><h2>David Chu's China Bistro</h2></a>
+                        <p><span class="fa fa-star">Kosher Certified</span></p>
+                    </div><br>
+                    <p class="call-center hidden-lg hidden-md hidden-sm text-success">Call: <a href="tel:410-602-5008"> <span class="fa fa-phone"></span> 410-602-5008</a></p>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                    <div id="collapsable-nav" class="collapse navbar-collapse">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="fa fa-info-circle"><br class="hidden-xs">About</span></a></li>
+                            <li class="visible-xs"><a href="home_page.html"><span class="fa fa-home"><br class="hidden-xs">Home</span></a></li>
+                            <li><a href="menu_categories.html"><span class="fa fa-cutlery"><br class="hidden-xs">Menu</span></a></li>
+                            <li><a href="#"><span class="fa fa-certificate"><br class="hidden-xs">Awards</span></a></li>
+                            <li id="phone" class="hidden-xs">
+                                <a href="tel:410-602-5008"><span class="fa fa-phone"> 410-602-5008</span></a>
+                                <div>*We Deliver</div>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <!--------------------------- header end  --------------------->
+
+    <!--------------------- main content start--------------------->
+    <div id="main-content" class="container">
+        <div class="jumbotron">
+            <img src="./img/restaurant.jpg" alt="restaurant-pic" class="img-responsive text-center">
+        </div>
+
+        <div id="home-titles" class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="menu_categories.html">
+                <div id="menu-tile"><span>Menu</span></div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="single-categories.html">
+                    <div id="specials-tile"><span>Specials</span></div>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <a href="https://goo.gl/maps/SjJE9C8qpQCcW6HV6" target="_blank">
+                    <div id="map-tile">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.675063231675!2d-76.71387678484591!3d39.36359442693437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2smm!4v1598516282401!5m2!1sen!2smm" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <span>Map</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!---------------------- End of main content ------------------>
+
+    <!---------------------- footer start  ------------------------>
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <section id="hours" class="col-sm-4">
+                    <span>HOURS:</span><br>
+                    Sun-Thurs: 11:15am - 10:00pm <br>
+                    Fri: 11:15am - 2:30pm <br>
+                    Saturaday: Closed
+                    <hr class="visible-xs">
+                </section>
+
+                <section id="address" class="col-sm-4">
+                    <span>ADRESS:</span> <br>
+                    7105 Reisterstown Road <br>
+                    Baltimore, MD 21215 
+                    <p>* Delievery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+                    <hr class="visible-xs">
+                </section>
+
+                <section id="testimonials" class="col-sm-4">
+                    <p>"The best Chinese resturant I've been to! And that's saying a lot, since I've been to many!"</p>
+                    <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+                </section>
+            </div>
+            <div class="text-center">&copy; Copyright David Chu's China Bistro 2020</div>
+        </div>
+    </footer>
+
+    <!---------------------- footer end --------------------------->
+
+
+    <!-- jQuery (Bootstrap Js plugins depend on it) -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
